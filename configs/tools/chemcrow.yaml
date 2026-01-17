@@ -1,0 +1,22 @@
+name: chemcrow
+mode: builtin
+activated_tools: null
+
+config:
+  # LLM configuration for tools that require language models
+  llm_model: deepseek-chat  # Can be gpt-3.5-turbo, gpt-4, etc.
+  # llm_model: gpt-4o-mini  # Can be gpt-3.5-turbo, gpt-4, etc.
+  temperature: 0.1
+  
+  # API Keys (can also be set via environment variables)
+  # openai_api_key: null  # Uses OPENAI_API_KEY env var by default
+  # serp_api_key: null    # Uses SERP_API_KEY env var (optional, for web search)
+  # chemspace_api_key: null  # Uses CHEMSPACE_API_KEY env var (optional, for molecule prices)
+  # rxn4chem_api_key: null  # Uses RXN4CHEM_API_KEY env var (optional, for reactions)
+  # semantic_scholar_api_key: null  # Uses SEMANTIC_SCHOLAR_API_KEY env var (optional)
+  openai_api_base: https://api.deepseek.com/v1
+  openai_api_key: 
+  # openai_api_base: http://35.220.164.252:3888/v1
+  # openai_api_key: 
+  # Reaction prediction mode
+  local_rxn: false  # Set to true to use local models instead of API

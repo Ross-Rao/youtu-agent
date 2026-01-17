@@ -104,6 +104,8 @@ class PrintUtils:
         """
         if isinstance(text, dict):
             text = PrintUtils.format_json(text)
+        else:
+            text = str(text)
         if oneline:
             text = " ".join(text.splitlines())
         if len(text) <= max_length:

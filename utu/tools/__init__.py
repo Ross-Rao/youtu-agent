@@ -3,6 +3,7 @@ from .arxiv_toolkit import ArxivToolkit
 from .audio_toolkit import AudioToolkit
 from .base import AsyncBaseToolkit as AsyncBaseToolkit
 from .bash_toolkit import BashToolkit
+from .chemcrow_toolkit import ChemcrowToolkit
 from .codesnip_toolkit import CodesnipToolkit
 from .document_toolkit import DocumentToolkit
 from .file_edit_toolkit import FileEditToolkit
@@ -35,6 +36,7 @@ TOOLKIT_MAP: dict[str, type[AsyncBaseToolkit]] = {
     "tabular": TabularDataToolkit,
     "memory_simple": SimpleMemoryToolkit,
     "user_interaction": UserInteractionToolkit,
+    "chemcrow": ChemcrowToolkit,
 }
 
 
